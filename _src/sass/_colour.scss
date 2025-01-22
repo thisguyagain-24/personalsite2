@@ -1,0 +1,28 @@
+@use "_var.scss" as var;
+
+nav {
+
+    background-color: var.$clr-offBlack;
+
+    > * {
+
+        transition: 0.2s;
+
+        color: var.$clr-green
+
+    }
+
+    > a:hover {
+
+        transition:0.2s;
+
+        color: var.$clr-pink
+        
+    }
+}
+
+.content {
+
+    background-color: var.$clr-offBlack;
+}
+

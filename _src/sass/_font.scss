@@ -1,0 +1,30 @@
+
+@use "_var.scss" as var;
+
+body {
+
+    color: var.$clr-green;
+
+    h1 {
+
+        font-family: var.$fnt-display;
+
+        font-size: 36px;
+
+        color: var.$clr-green;
+
+    }
+
+    h2, h3, h4, h5, h6 {
+
+        font-family: var.$fnt-header;
+
+        font-size: 24px;
+
+    }
+
+    p, a {
+
+        font-family: var.$fnt-text;
+    }
+}
