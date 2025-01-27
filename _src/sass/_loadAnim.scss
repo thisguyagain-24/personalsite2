@@ -1,0 +1,75 @@
+@use "_var.scss" as var;
+
+.grn {
+
+    background-color: var.$clr-green;
+
+    animation-name: slideUpAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+
+}
+
+.blu {
+
+    background-color: var.$clr-blu;
+    
+
+    animation-name: slideUpAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+
+    
+}
+
+.pnk {
+
+    background-color: var.$clr-pink;
+
+    animation-name: slideUpAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+
+
+
+
+}
+
+.slideUp {
+
+    height: 100vh;
+    width:100vw;
+
+    display:block;
+    position:absolute;
+
+    z-index: 1000;
+
+}
+
+@keyframes slideUpAnim {
+
+    0% {
+
+        position: absolute;
+
+        transform: translateY(0vh);
+
+    }
+
+    99% {
+
+       visibility: visible;
+    }
+
+    100% {
+
+        visibility: hidden;
+
+        transform:translateY(-110vh)
+    }
+    
+}

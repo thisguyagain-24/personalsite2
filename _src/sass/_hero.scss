@@ -1,11 +1,40 @@
 @use "_var.scss" as var;
+@use "sass:color" as clr;
 
-.heroDiv {
 
-    background-image: linear-gradient(var.$clr-blu-trans, var.$clr-offBlack-trans), url(../img/scunglyboingus.png)
-    
-    
-    //cannot stress enough that this is a placholder
+div.heroDiv {
 
-    // update i am so glad i chose that as a placeholder
+    background-image: linear-gradient(clr.adjust(var.$clr-offBlack, $alpha: -0.16),var.$clr-offBlack);
+
+    z-index: 1;
+
+    height:calc(40vh + 5vh);
+
+    transform: translateY(-5vh);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    padding:10% 5% 10% 5%;
+
+    > .textContainer {
+
+        border: 1px solid var.$clr-green-trans;
+
+        border-radius: 6px;
+        filter: drop-shadow(0px 0px 10px var.$clr-green-trans);
+
+        width:60%;
+
+        > * {
+
+            margin: 5% 5% 5% 5%;
+        }
+
+    }
+
 }
+

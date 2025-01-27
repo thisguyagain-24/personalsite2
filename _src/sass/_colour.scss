@@ -1,14 +1,19 @@
 @use "_var.scss" as var;
+@use "sass:color" as clr;
 
 nav {
 
-    background-color: var.$clr-offBlack;
+    background-color:clr.adjust(var.$clr-offBlack-trans, $lightness: -15%, $alpha: 0.05);
+
+    box-shadow: 0 5% 30% clr.adjust(var.$clr-offBlack-trans, $lightness: -5%);
+    backdrop-filter: blur(8.3px);
+
 
     > * {
 
         transition: 0.2s;
 
-        color: var.$clr-green
+        color: var.$clr-green;
 
     }
 
@@ -16,9 +21,11 @@ nav {
 
         transition:0.2s;
 
-        color: var.$clr-pink
+        color: var.$clr-pink;
         
     }
+
+
 }
 
 .content {

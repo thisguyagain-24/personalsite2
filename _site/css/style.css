@@ -68,7 +68,9 @@ body p, body a {
 }
 
 nav {
-  background-color: black;
+  background-color: hsla(0, 0%, -15%, 0.5519607843);
+  box-shadow: 0 5% 30% hsla(0, 0%, -5%, 0.5019607843);
+  backdrop-filter: blur(8.3px);
 }
 nav > * {
   transition: 0.2s;
@@ -87,24 +89,82 @@ nav {
   height: 5vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 nav > * {
   padding: 0 5% 0 5%;
 }
 
+.internalContent {
+  margin: 0 5% 0 5%;
+}
+
 div.heroDiv {
-  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.84), black);
+  z-index: 1;
+  height: 45vh;
+  transform: translateY(-5vh);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20% 5% 20% 5%;
+  padding: 10% 5% 10% 5%;
 }
-div.heroDiv > * {
+div.heroDiv > .textContainer {
+  border: 1px solid rgba(30, 255, 0, 0.5019607843);
+  border-radius: 6px;
+  filter: drop-shadow(0px 0px 10px rgba(30, 255, 0, 0.5019607843));
   width: 60%;
 }
+div.heroDiv > .textContainer > * {
+  margin: 5% 5% 5% 5%;
+}
 
-.heroDiv {
-  background-image: linear-gradient(rgba(0, 242, 255, 0.5019607843), rgba(0, 0, 0, 0.5019607843)), url(../img/scunglyboingus.png);
+.grn {
+  background-color: #1eff00;
+  animation-name: slideUpAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
+
+.blu {
+  background-color: #00f2ff;
+  animation-name: slideUpAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+.pnk {
+  background-color: #ff0077;
+  animation-name: slideUpAnim;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+.slideUp {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+}
+
+@keyframes slideUpAnim {
+  0% {
+    position: absolute;
+    transform: translateY(0vh);
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+    transform: translateY(-110vh);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
