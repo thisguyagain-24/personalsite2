@@ -100,6 +100,21 @@ nav > * {
 .internalContent {
   margin: 0 5% 0 5%;
 }
+.internalContent > * {
+  display: flex;
+  flex-direction: column;
+}
+.internalContent > * > * {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.internalContent > * img {
+  align-self: center;
+  width: 50vw;
+}
+.internalContent > * p {
+  width: 80vw;
+}
 
 div.heroDiv {
   background-image: linear-gradient(rgba(0, 0, 0, 0.84), black);
