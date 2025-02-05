@@ -10,7 +10,7 @@ fetchContent()
 
 async function fetchContent() {
 
-    var contentURL = './js/data.json';
+    var contentURL = '../js/data.json';
 
     let data = 'data has not been fetched.'
 
@@ -22,9 +22,7 @@ async function fetchContent() {
 
             contentainter.innerHTML = `There was a problem fetching this content. Please reload the page. Error information: ${response.status}`
 
-            
             throw new Error(`There was a problem fetching this content. Please reload the page. Error information: ${response.status}`)
-
 
         }
 
