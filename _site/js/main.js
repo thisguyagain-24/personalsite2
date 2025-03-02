@@ -172,8 +172,10 @@ function projFormatter(data) {
         var thisDesc = package.desc;
 
         var thisThumb = package.thumbnail;
+
+        let thisLink = package.link;
         
-        var toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> </div>`
+        var toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> <a href="${thisLink}"> Link </a></div>`
 
         contentainter.innerHTML += (toInsertThis)
     })

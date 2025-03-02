@@ -52,3 +52,23 @@ hr {
 
     border: 1px solid var.$clr-green-trans;
 }
+
+.internalContent {
+
+    a {
+
+        color: var.$clr-pink;
+    
+    }    
+
+    img {
+
+        padding: 0;
+    
+        margin: 0;
+    
+        border: 1px solid var.$clr-green-trans;
+
+        border-radius: 6px;
+    }
+}

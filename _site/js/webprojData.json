@@ -1,38 +1,27 @@
 [
     {
         
-        "title":"DemoTitle ragghhhhhhhghghghghg",
-        "desc":"Demodesc woagjhhhh",
-        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"]
+        "title":"CoffeeTime",
+        "desc":"A short game about Javascript",
+        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"],
+        "link":"https://potentialenergy.xyz/coffeeTime/"
         
     },
     {
 
-        "title":"Dhlldjhgfjj",
-        "desc":"blablablablablablablablablabla",
-        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1740541580/demo_nt2qiq.png"]
-
+        
+        "title":"Starline Industries",
+        "desc":"A Sci-Fi themed site made to learn how to use Nunjucks and 11ty as a SSG",
+        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1740950471/yep_hdq8dr.png"],
+        "link":"https://starlineindustries.netlify.app/"
     },
     {
 
-        "title":"Dhlldjhgfjj",
-        "desc":"blablablablablablablablablabla",
-        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1740541580/demo_nt2qiq.png"]
+        "title":"WWWeather",
+        "desc":"A simple weather site, made to learn about APIs and URL arguments",
+        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730733570/85db6e37-cd47-49c3-9381-9ab1890f5f93.png"],
+        "link": "https://potentialenergy.xyz/wwweather/"
 
-    },
-    {
-        
-        "title":"DemoTitle ragghhhhhhhghghghghg",
-        "desc":"Demodesc woagjhhhh",
-        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"]
-        
-    },
-    {
-        
-        "title":"DemoTitle ragghhhhhhhghghghghg",
-        "desc":"Demodesc woagjhhhh",
-        "thumbnail":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"]
-        
     }
 
 ]
