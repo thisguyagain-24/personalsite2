@@ -143,6 +143,9 @@ nav > * {
   align-self: center;
   width: 50vw;
 }
+.internalContent > * p, .staticContent > * p {
+  width: 60vw;
+}
 
 .gallery {
   display: flex;
