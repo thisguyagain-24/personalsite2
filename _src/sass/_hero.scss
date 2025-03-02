@@ -40,3 +40,22 @@ div.heroDiv {
 
 }
 
+
+
+@media screen and (max-width:900px) {
+
+    div.heroDiv {
+
+        align-items: center;
+    }
+
+
+    div.heroDiv > .textContainer {
+
+        width: 80vw;
+        text-align: center;
+    
+    }
+
+    
+}

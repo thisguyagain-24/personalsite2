@@ -1,0 +1,39 @@
+@use "_var.scss" as var;
+@use "sass:color" as clr;
+
+@media screen and (max-width:900px) {
+
+    .galleryDiv img {
+
+        width: 80vw;
+
+        max-width: 80vw;
+    }
+
+    nav {
+
+        height: 10vw;
+
+        font-size: 1.5rem;
+    }
+
+    .internalContent div > a {
+
+        font-size: 2rem;
+
+        padding: 5%;
+
+        border: 1px solid var.$clr-pink;
+
+        border-radius: 6px;
+
+        max-width: 10vw;
+
+        align-self: center;
+
+        margin-bottom: 5%;
+    }
+
+
+    
+}
