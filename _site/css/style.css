@@ -116,6 +116,20 @@ nav > * {
   width: 80vw;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
+.galleryDiv {
+  padding: 2%;
+}
+.galleryDiv p, .galleryDiv a, .galleryDiv img, .galleryDiv h1, .galleryDiv h2, .galleryDiv h3, .galleryDiv h4, .galleryDiv h5, .galleryDiv h6 {
+  width: fit-content;
+  max-width: 40vw;
+}
+
 div.heroDiv {
   background-image: linear-gradient(rgba(0, 0, 0, 0.84), black);
   z-index: 1;
@@ -179,6 +193,20 @@ div.heroDiv > .textContainer > * {
   100% {
     visibility: hidden;
     transform: translateY(-110vh);
+  }
+}
+@media (prefers-reduced-motion) {
+  .pnk {
+    animation: none;
+    display: none;
+  }
+  .grn {
+    animation: none;
+    display: none;
+  }
+  .blu {
+    animation: none;
+    display: none;
   }
 }
 

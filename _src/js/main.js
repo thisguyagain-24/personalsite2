@@ -6,16 +6,31 @@ console.log(contentainter)
 var thisPage = document.title;
 
 console.log(thisPage)
-fetchContent()
 
-async function fetchContent() {
+fetchContent(thisPage)
 
-    var contentURL = '../js/data.json';
+async function fetchContent(thisPage) {
+
+    switch (thisPage) {
+
+        case "Potential Energy -- Home":
+
+            var contentURL = '../js/data.json';
+
+            break;
+
+        case "Potential Energy -- Web Projects":
+        
+            var contentURL = '../js/webprojData.json'; // todo: alternate data source here
+
+            break;
+
+    }
 
     let data = 'data has not been fetched.'
 
-    try {
-
+/*     try {
+ */
         const response = await fetch(contentURL);
 
         if (!response.ok) { // first, if we get a bad status code, throw
@@ -32,32 +47,33 @@ async function fetchContent() {
 
         data = await response.json()
 
-        mainFormatter(data)
+        switch (thisPage) {
 
-    } catch(error) {
+
+        case "Potential Energy -- Home":
+
+            mainFormatter(data)
+
+            break;
+
+        case "Potential Energy -- Web Projects":
+            
+            projFormatter(data)
+
+            break;
+
+        //todo: the last case
+        }
+
+
+/*     } catch(error) {
 
         console.log(`An error has occured. Error information: ${error}`)
-
-    }
-
+    } */
 }
 
-// yeah i nabbed this from stackoverflow.... thank yoooouuu stackoverflow
-
-// source: https://stackoverflow.com/a/12900504
-
-function getExtension(path) {
 
 
-    var basename = path.split(/[\\/]/).pop(),  // extract file name from full path ...
-                                               // (supports `\\` and `/` separators)
-        pos = basename.lastIndexOf(".");       // get last position of `.`
-
-    if (basename === "" || pos < 1)            // if file name is empty or ...
-        return "";                             //  `.` not found (-1) or comes first (0)
-
-    return basename.slice(pos + 1);            // extract extension ignoring `.`
-}
 
 function mainFormatter(data) {
 
@@ -114,7 +130,7 @@ function mainFormatter(data) {
 
         }
 
-        console.log("on package " + thisTitle, thisContent, thisAssets, assetsArray)
+        // console.log("on package " + thisTitle, thisContent, thisAssets, assetsArray)
 
         var toInsertThis = document.createElement("div")
 
@@ -134,4 +150,36 @@ function mainFormatter(data) {
     )
 }
 
+function projFormatter(data) {
+
+    data.forEach(package => {
+
+        var thisTitle = package.title;
+
+        var thisDesc = package.desc;
+
+        var thisThumb = package.thumbnail;
+        
+        var toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> </div>`
+
+        contentainter.innerHTML += (toInsertThis)
+    })
+}
+
+// yeah i nabbed this from stackoverflow.... thank yoooouuu stackoverflow
+
+// source: https://stackoverflow.com/a/12900504
+
+function getExtension(path) {
+
+
+    var basename = path.split(/[\\/]/).pop(),  // extract file name from full path ...
+                                               // (supports `\\` and `/` separators)
+        pos = basename.lastIndexOf(".");       // get last position of `.`
+
+    if (basename === "" || pos < 1)            // if file name is empty or ...
+        return "";                             //  `.` not found (-1) or comes first (0)
+
+    return basename.slice(pos + 1);            // extract extension ignoring `.`
+}
 

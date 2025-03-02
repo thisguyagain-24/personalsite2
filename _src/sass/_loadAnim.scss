@@ -73,3 +73,26 @@
     }
     
 }
+
+@media (prefers-reduced-motion) {
+
+    // do not play animations if user prefers reduced motion (they can be a lot)
+
+    .pnk {
+
+        animation: none;
+        display: none;
+    }
+
+    .grn {
+
+        animation: none;
+        display: none;
+    }
+
+    .blu {
+
+        animation: none;
+        display: none;
+    }
+}
