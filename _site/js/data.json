@@ -1,13 +1,21 @@
 [
+
     {
-        "title":"this is some content",
-        "text":"woooooooowwwwwwwwww texto texto texto mucho texto. paragraph paragraph typey words",
-        "assets":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"]
+        "title":"Site Refactored",
+        "text":"I finally decided to redo my personal site with a new style and new functionality. Not much to say about it besides that."
+    },
+    {
+        "title":"WWW.eather",
+        "text":"For one of my weekly labs, my class was instructed to make a simple site that uses an API. Of course, I made a little weather site. Enter your Country, Province (or other type of administrative region) and City, and see what the weather's like right now, featuring images from Unsplash's API. The site has proper error handling in place, along with proper fallback images incase it runs out of Unsplash API calls. (It really never should naturally, as Unsplash's demo API is actually pretty generous, but during development it happened a few times and it was annoying me.) It also uses URL arguments to pass information between the first and second pages, as well as a media query to make the page look acceptable on most mobile devices.",
+        "link":"https://potentialenergy.xyz/wwweather/",
+        "assets":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730733570/85db6e37-cd47-49c3-9381-9ab1890f5f93.png"]
 
         
     },
     {
-        "title": "more content here",
-        "text":"writing demo content is very fun. i like writing demo content. writing demo content is very fun. i like writing demo content.writing demo content is very fun. i like writing demo content.writing demo content is very fun. i like writing demo content.writing demo content is very fun. i like writing demo content."
+        "title": "CoffeeTime",
+        "text":"Last year for my creative coding final I put together a little JavaScript learning game.",
+        "link": "https://www.potentialenergy.xyz/coffeeTime",
+        "assets":["https://res.cloudinary.com/dvyvtmbgp/image/upload/v1730731171/coffeeTime_lemgvp.png"]
     }
 ]

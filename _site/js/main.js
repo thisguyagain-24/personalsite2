@@ -1,11 +1,9 @@
 var contentainter = document.querySelector(".internalContent")
 
-console.log(contentainter)
 // fetch json from external source here... we'll use a local file for now
 
 var thisPage = document.title;
 
-console.log(thisPage)
 
 fetchContent(thisPage)
 
@@ -86,10 +84,13 @@ function mainFormatter(data) {
         var thisContent = package.text;
 
         var thisAssets = undefined;
+
+        let thisLink = package.link;
+
+
         
         let assetsArray = []
 
-        console.log(package.assets)
 
         if (package.assets !== (undefined)) { // if assets are not undefined
 
@@ -119,7 +120,6 @@ function mainFormatter(data) {
 
                     }
 
-                    console.log(asset)
 
                     // todo: mkv support so I dont have to fuss with conversion straight from my computer, audio support
 
@@ -134,7 +134,20 @@ function mainFormatter(data) {
 
         var toInsertThis = document.createElement("div")
 
-        toInsertThis.innerHTML = `<h2> ${thisTitle} </h2> <p> ${thisContent} </p>`
+        toInsertThis.classList.add("insertedDiv")
+
+        if (thisLink == undefined) {
+
+            toInsertThis.innerHTML = `<h2> ${thisTitle} </h2> <p> ${thisContent} </p>`
+
+        } else {
+
+
+            toInsertThis.innerHTML = `<h2> ${thisTitle} </h2> <p> ${thisContent} </p> <a href="${thisLink}"> Link </a>`
+
+        }
+
+        
 
         assetsArray.forEach(asset => {
 
