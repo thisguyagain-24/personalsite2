@@ -37,3 +37,46 @@
 
     
 }
+
+@media screen and (max-width:500px) {
+
+    .galleryDiv img, .internalContent img {
+
+        width: 80vw;
+    }
+
+    h2 {
+
+        font-size: 1.8rem;
+    }
+
+    p {
+
+        font-size: 1.3rem;
+    }
+
+    nav {
+
+        height: 10vw;
+
+        font-size: 1.2rem;
+    }
+
+    .internalContent div > a {
+
+        font-size: 2rem;
+
+        padding: 5%;
+
+        border: 1px solid var.$clr-pink;
+
+        border-radius: 6px;
+
+        max-width: 30vw;
+
+        align-self: center;
+
+        margin-bottom: 5%;
+    }
+    
+}
