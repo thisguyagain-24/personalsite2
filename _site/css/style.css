@@ -114,6 +114,15 @@ hr {
   margin: 5px;
 }
 
+.fourohfour a {
+  color: #ff0077;
+  font-size: 2rem;
+}
+.fourohfour > a:hover {
+  transition: 0.2s;
+  color: #ff0077;
+}
+
 nav {
   height: 5vh;
   display: flex;
@@ -163,6 +172,20 @@ nav > * {
 
 hr {
   width: 60vw;
+}
+
+.fourohfour {
+  align-items: center;
+  text-align: center;
+}
+.fourohfour h1 {
+  font-size: 5rem;
+}
+.fourohfour p {
+  font-size: 2rem;
+}
+.fourohfour > * {
+  padding-top: 5%;
 }
 
 .grn {

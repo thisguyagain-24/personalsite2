@@ -7,6 +7,7 @@
 
 
     <title> {{title}} </title>
+
         <style> 
 
             <!-- styles to be applied when page loads, hopefully makes FOUC less Bad-->
@@ -17,11 +18,17 @@
 
                 overflow-x: hidden;
             }
+
         </style>
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <script defer src="../js/main.js"> </script>
+    {%if (title != "404")%}
+
+        <script defer src="../js/main.js"> </script>
+
+    {%endif%}
+
 
 </head>
 <body class="content">
@@ -32,7 +39,11 @@
 
     </header>
 
+    {%if (title != "404")%}
+
         {%include './hero.njk'%}
+
+    {%endif%}
 
     {{content | safe}}
     

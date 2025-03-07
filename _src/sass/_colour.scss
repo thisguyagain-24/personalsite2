@@ -82,3 +82,25 @@ hr {
     margin: 5px;
 
 }
+
+
+.fourohfour {
+
+    a {
+
+        color: var.$clr-pink;
+        
+        font-size: 2rem;
+    }
+
+
+    > a:hover {
+
+        transition:0.2s;
+
+        color: var.$clr-pink;
+        
+    }
+
+
+}
