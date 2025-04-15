@@ -290,27 +290,42 @@ div.heroDiv > .textContainer > * {
   }
 }
 @media screen and (max-width: 900px) {
-  .galleryDiv img {
-    width: 80vw;
-    max-width: 80vw;
+  .internalContent > a, .internalContent > img, .internalContent > h1, .internalContent > h2, .internalContent > h3, .internalContent > h4, .internalContent > h5, .internalContent > h6 {
+    width: 100%;
+  }
+  .internalCard > h2 {
+    font-size: 1.8rem;
+  }
+  .internalCard > p {
+    font-size: 1.2rem;
+  }
+  .galleryDiv img, .internalContent img, .galleryDiv p {
+    width: 100%;
+    max-width: 100%;
   }
   nav {
     height: 10vw;
     font-size: 1.5rem;
   }
+  .internalCard {
+    display: flex;
+    flex-direction: column;
+  }
   .internalContent div > a {
+    display: flex;
     font-size: 2rem;
-    padding: 5%;
+    padding: 2vw 2vh;
     border: 1px solid #ff0077;
     border-radius: 6px;
-    max-width: 10vw;
-    align-self: center;
-    margin-bottom: 5%;
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 5%;
   }
 }
 @media screen and (max-width: 500px) {
   .galleryDiv img, .internalContent img {
-    width: 80vw;
+    width: 100%;
+    max-width: 100%;
   }
   h2 {
     font-size: 1.8rem;
@@ -324,11 +339,10 @@ div.heroDiv > .textContainer > * {
   }
   .internalContent div > a {
     font-size: 2rem;
-    padding: 5%;
+    padding: 2%;
     border: 1px solid #ff0077;
     border-radius: 6px;
-    max-width: 30vw;
-    align-self: center;
+    text-align: center;
     margin-bottom: 5%;
   }
 }
