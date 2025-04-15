@@ -136,12 +136,11 @@ function mainFormatter(data) {
 
         if (thisLink == undefined) {
 
-            toInsertThis.innerHTML = `<h2> ${thisTitle} </h2> <p> ${thisContent} </p>`
+            toInsertThis.innerHTML = `<div class="internalCard"> <h2> ${thisTitle} </h2> <p> ${thisContent} </p> </div>`
 
         } else {
 
-
-            toInsertThis.innerHTML = `<h2> ${thisTitle} </h2> <p> ${thisContent} </p> <a href="${thisLink}"> Link </a>`
+            toInsertThis.innerHTML = `<div class="internalCard"> <h2> ${thisTitle} </h2> <p> ${thisContent} </p> <a href="${thisLink}"> Link </a> </div>`
 
         }
 
@@ -173,7 +172,7 @@ function projFormatter(data) {
 
         let thisLink = package.link;
         
-        let toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> <a href="${thisLink}"> Link </a></div>`
+        let toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <div class="internalCard"> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> <a href="${thisLink}"> Link </a></div></div>`
 
         contentainter.innerHTML += (toInsertThis)
     })

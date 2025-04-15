@@ -27,6 +27,8 @@ nav {
 
     justify-content: center;
 
+    line-height: 1.8;
+
     /* align-items: center; */
 
     > * {
@@ -35,13 +37,6 @@ nav {
 
         flex-direction: column;
         
-
-        > * {
-
-            padding-top:2vh;
-            padding-bottom: 2vh;
-
-        }
 
         img {
 
@@ -55,19 +50,28 @@ nav {
 
 }
 
-.gallery {
+.internalCard {
+
+    padding: 5%;
+}
+
+.internalContent.gallery{
 
     display: flex;
-    flex-direction: row !important; 
+
+    flex-direction: row !important;
+
     // grid-template-columns: auto auto;
+
     flex-wrap: wrap;
+
     // text-align: center;
+
+    margin: 5%;
 
 }
 
 .galleryDiv {
-
-    padding: 2%;
 
     margin: 5px;
 
@@ -117,5 +121,19 @@ hr {
     margin: 0;
 }
 
+.insertedDiv {
 
+    margin-top: 5%;
 
+    border-radius: 6px;
+}
+
+.qapair > h2 {
+
+    font-size: 2em;
+}
+
+.qapair > p {
+
+    font-size: 1.2em;
+}

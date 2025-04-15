@@ -92,23 +92,19 @@ hr {
 }
 
 .insertedDiv {
-  margin-top: 5%;
-  padding: 2%;
-  border-radius: 6px;
+  background-color: rgb(12.75, 12.75, 12.75);
 }
 
 .internalContent a {
   color: #ff0077;
 }
 .internalContent img {
-  padding: 0;
-  margin: 0;
   border-radius: 6px;
 }
 
 .galleryDiv {
-  border: 1px solid rgba(30, 255, 0, 0.5019607843);
   border-radius: 6px;
+  background-color: rgb(12.75, 12.75, 12.75);
 }
 
 .fourohfour a {
@@ -136,29 +132,30 @@ nav > * {
 .internalContent, .staticContent {
   margin: 0 15% 0 15%;
   justify-content: center;
+  line-height: 1.8;
   /* align-items: center; */
 }
 .internalContent > *, .staticContent > * {
   display: flex;
   flex-direction: column;
 }
-.internalContent > * > *, .staticContent > * > * {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-}
 .internalContent > * img, .staticContent > * img {
   align-self: center;
   width: 100%;
 }
 
-.gallery {
+.internalCard {
+  padding: 5%;
+}
+
+.internalContent.gallery {
   display: flex;
   flex-direction: row !important;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
 .galleryDiv {
-  padding: 2%;
   margin: 5px;
 }
 .galleryDiv p, .galleryDiv a, .galleryDiv img, .galleryDiv h1, .galleryDiv h2, .galleryDiv h3, .galleryDiv h4, .galleryDiv h5, .galleryDiv h6 {
@@ -187,6 +184,19 @@ hr {
 .img {
   padding: 0;
   margin: 0;
+}
+
+.insertedDiv {
+  margin-top: 5%;
+  border-radius: 6px;
+}
+
+.qapair > h2 {
+  font-size: 2em;
+}
+
+.qapair > p {
+  font-size: 1.2em;
 }
 
 .grn {

@@ -44,11 +44,8 @@ hr {
 
 .insertedDiv {
 
-    margin-top: 5%;
+    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 5%, $saturation: -20%);
 
-    padding: 2%;
-
-    border-radius: 6px;
 }
 
 .internalContent {
@@ -61,17 +58,16 @@ hr {
 
     img {
 
-
-
         border-radius: 6px;
     }
 }
 
 .galleryDiv {
 
-    border: 1px solid var.$clr-green-trans;
-
     border-radius: 6px;
+
+    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 5%, $saturation: -20%);
+
 
 }
 
