@@ -1,6 +1,6 @@
 nav {
 
-    height: 5vh;
+    height: 8vh;
 
     display:flex;
 
@@ -11,6 +11,8 @@ nav {
     position: relative;
 
     z-index: 2;
+
+    font-size: 1.5em;
    
     > * {
 
@@ -21,9 +23,7 @@ nav {
 
 .internalContent, .staticContent {
 
-
-
-    margin: 0 5% 0 5%;
+    margin: 0 15% 0 15%;
 
     justify-content: center;
 
@@ -47,16 +47,9 @@ nav {
 
             align-self: center;
 
-            width:50vw;
+            width:100%;
             
         }
-
-        p {
-
-            width: 80vw;
-
-        }
-
 
     }
 
@@ -76,9 +69,12 @@ nav {
 
     padding: 2%;
 
+    margin: 5px;
+
+
     p,a,img,h1,h2,h3,h4,h5,h6 {
 
-        width: fit-content;
+        width:auto;
 
         max-width: 40vw;
     }
@@ -112,6 +108,13 @@ hr {
 
     }
 
+}
+
+.img {
+
+    padding: 0;
+    
+    margin: 0;
 }
 
 

@@ -1,9 +1,10 @@
-var contentainter = document.querySelector(".internalContent")
+let contentainter = document.querySelector(".internalContent")
 
 // fetch json from external source here... we'll use a local file for now
 
-var thisPage = document.title;
+let thisPage = document.title;
 
+let contentURL;
 
 fetchContent(thisPage)
 
@@ -13,13 +14,13 @@ async function fetchContent(thisPage) {
 
         case "Potential Energy -- Home":
 
-            var contentURL = '../js/data.json';
+            contentURL = '../js/data.json';
 
             break;
 
         case "Potential Energy -- Web Projects":
         
-            var contentURL = '../js/webprojData.json'; // todo: alternate data source here
+            contentURL = '../js/webprojData.json'; // todo: alternate data source here
 
             break;
 
@@ -79,18 +80,15 @@ function mainFormatter(data) {
 
         // format stuff
 
-        var thisTitle = package.title;
+        let thisTitle = package.title;
 
-        var thisContent = package.text;
+        let thisContent = package.text;
 
-        var thisAssets = undefined;
+        let thisAssets = undefined;
 
         let thisLink = package.link;
-
-
         
         let assetsArray = []
-
 
         if (package.assets !== (undefined)) { // if assets are not undefined
 
@@ -102,7 +100,7 @@ function mainFormatter(data) {
 
                         //if its an image, put it in an image element
 
-                        var anAsset = document.createElement("img")
+                        let anAsset = document.createElement("img")
 
                         anAsset.src = asset
 
@@ -112,7 +110,7 @@ function mainFormatter(data) {
 
                         // if it's a video, make it a video
 
-                        var anAsset = document.createElement("video")
+                        let anAsset = document.createElement("video")
 
                         anAsset.src = asset
 
@@ -132,7 +130,7 @@ function mainFormatter(data) {
 
         // console.log("on package " + thisTitle, thisContent, thisAssets, assetsArray)
 
-        var toInsertThis = document.createElement("div")
+        let toInsertThis = document.createElement("div")
 
         toInsertThis.classList.add("insertedDiv")
 
@@ -167,15 +165,15 @@ function projFormatter(data) {
 
     data.forEach(package => {
 
-        var thisTitle = package.title;
+        let thisTitle = package.title;
 
-        var thisDesc = package.desc;
+        let thisDesc = package.desc;
 
-        var thisThumb = package.thumbnail;
+        let thisThumb = package.thumbnail;
 
         let thisLink = package.link;
         
-        var toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> <a href="${thisLink}"> Link </a></div>`
+        let toInsertThis = `<div class="galleryDiv"> <img class="galleryImg" src=${thisThumb}> <h2> ${thisTitle} </h2> <p> ${thisDesc} </p> <a href="${thisLink}"> Link </a></div>`
 
         contentainter.innerHTML += (toInsertThis)
     })
@@ -188,7 +186,7 @@ function projFormatter(data) {
 function getExtension(path) {
 
 
-    var basename = path.split(/[\\/]/).pop(),  // extract file name from full path ...
+    let basename = path.split(/[\\/]/).pop(),  // extract file name from full path ...
                                                // (supports `\\` and `/` separators)
         pos = basename.lastIndexOf(".");       // get last position of `.`
 
