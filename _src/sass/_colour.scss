@@ -44,7 +44,8 @@ hr {
 
 .insertedDiv {
 
-    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 5%, $saturation: -20%);
+    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 3%, $saturation: -20%);
+
 
 }
 
@@ -66,8 +67,7 @@ hr {
 
     border-radius: 6px;
 
-    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 5%, $saturation: -20%);
-
+    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 3%, $saturation: -20%);
 
 }
 

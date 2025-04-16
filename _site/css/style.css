@@ -92,7 +92,7 @@ hr {
 }
 
 .insertedDiv {
-  background-color: rgb(12.75, 12.75, 12.75);
+  background-color: rgb(7.65, 7.65, 7.65);
 }
 
 .internalContent a {
@@ -104,7 +104,7 @@ hr {
 
 .galleryDiv {
   border-radius: 6px;
-  background-color: rgb(12.75, 12.75, 12.75);
+  background-color: rgb(7.65, 7.65, 7.65);
 }
 
 .fourohfour a {
@@ -189,6 +189,10 @@ hr {
 .insertedDiv {
   margin-top: 5%;
   border-radius: 6px;
+}
+
+.qapair {
+  padding: 2% 0 2% 0;
 }
 
 .qapair > h2 {
