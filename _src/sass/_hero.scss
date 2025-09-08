@@ -22,18 +22,25 @@ div.heroDiv {
 
     padding:10% 5% 10% 5%;
 
+    align-items: center;
+
     > .textContainer {
 
-        border: 1px solid var.$clr-green-trans;
-
-        border-radius: 6px;
+        border-radius: var.$ex-stdBorderRadius;
         filter: drop-shadow(0px 0px 10px var.$clr-green-trans);
 
-        width:60%;
+        width:80vw;
+
+        text-align: center;
 
         > * {
 
             margin: 5% 5% 5% 5%;
+        }
+
+        > h1 {
+
+            font-size: 3rem;
         }
 
     }

@@ -44,8 +44,10 @@ hr {
 
 .insertedDiv {
 
-    background-color: adjust-color($color: var.$clr-offBlack, $lightness: 3%, $saturation: -20%);
+    border: var.$clr-green solid 1px;
 
+    box-shadow: 0 5% 30% clr.adjust(var.$clr-offBlack-trans, $lightness: -5%);
+    backdrop-filter: blur(8.3px);
 
 }
 
@@ -59,13 +61,13 @@ hr {
 
     img {
 
-        border-radius: 6px;
+        border-radius: var.$ex-stdBorderRadius;
     }
 }
 
 .galleryDiv {
 
-    border-radius: 6px;
+    border-radius: var.$ex-stdBorderRadius;
 
     background-color: adjust-color($color: var.$clr-offBlack, $lightness: 3%, $saturation: -20%);
 

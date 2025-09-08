@@ -1,25 +1,21 @@
 @use "sass:color" as clr;
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Rubik+Glitch&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 $clr-offWhite: #eefff9ff;
-$clr-green: #1eff00ff;
+$clr-green: #16DB65;
 $clr-blu: #00f2ffff;
 $clr-pink: #ff0077ff;
 $clr-offBlack: #000000ff;
 
-
 $clr-offWhite-trans: #eefff980;
-$clr-green-trans: #1eff0080;
+$clr-green-trans: #16DB6580;
 $clr-blu-trans: #00f2ff80;
 $clr-pink-trans: #ff007780;
 $clr-offBlack-trans: #00000080;
 
-
-
-
-
 $fnt-text:"Titillium Web", monospace;
-$fnt-display:"Orbitron", monospace;
-$fnt-header:"Roboto Condensed", monospace;
+$fnt-display:"Rubik Glitch", monospace;
+$fnt-header:"Kdam Thmor Pro", monospace;
 
+$ex-stdBorderRadius: 2px;

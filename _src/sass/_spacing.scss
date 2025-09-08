@@ -1,3 +1,5 @@
+@use "_var.scss" as var;
+
 nav {
 
     height: 8vh;
@@ -6,7 +8,7 @@ nav {
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: left;
 
     position: relative;
 
@@ -16,7 +18,7 @@ nav {
    
     > * {
 
-        padding: 0 5% 0 5%;
+        padding: 0 2% 0 2%;
     }
 
 }
@@ -125,20 +127,36 @@ hr {
 
     margin-top: 5%;
 
-    border-radius: 6px;
+    border-radius: var.$ex-stdBorderRadius;
 }
 
 .qapair {
 
     padding: 2% 0 2% 0;
+
+        .imgTxtGroup {
+
+        display: flex;
+
+        flex-direction: row;
+
+        img {
+
+            width: 50%;
+
+            margin: 0 0 0 5%;
+        }
+    }
 }
 
-.qapair > h2 {
+.qapair h2 {
 
     font-size: 2em;
 }
 
-.qapair > p {
+.qapair p {
 
     font-size: 1.2em;
+
+
 }
