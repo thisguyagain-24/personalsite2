@@ -1,0 +1,48 @@
+@use "_var.scss" as var;
+@use "sass:color" as clr;
+
+footer {
+
+    background-color: var.$clr-offBlack;
+
+    height:40vh;
+    padding:5%;
+    margin-top: 5%;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.hardLeft {
+
+    width:30%;
+
+    p {
+
+        font-size: 48px;
+    }
+}
+
+.hardRight {
+
+    width:30%;
+    text-align: right;
+
+    li {
+
+        margin:2vh 0 2vh 0;
+    }
+
+    a {
+
+        font-size: 32px;
+
+        color: var.$clr-green;
+    }
+}
+

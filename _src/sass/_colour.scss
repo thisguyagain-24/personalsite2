@@ -5,7 +5,8 @@ nav {
 
     background-color:clr.adjust(var.$clr-offBlack-trans, $lightness: -15%, $alpha: 0.05);
 
-    box-shadow: 0 5% 30% clr.adjust(var.$clr-offBlack-trans, $lightness: -5%);
+    box-shadow: 0px 10px 30px clr.adjust(var.$clr-offBlack-trans, $lightness: -5%);
+
     backdrop-filter: blur(8.3px);
 
 
@@ -31,6 +32,12 @@ nav {
 .content {
 
     background-color: var.$clr-offBlack;
+
+    background-image:
+    linear-gradient((var.$clr-offBlack-demi), var.$clr-offBlack-demi),
+    url("/img/noisy.jpg");
+
+    background-size: contain;
 }
 
 hr {
@@ -46,7 +53,7 @@ hr {
 
     border: var.$clr-green solid 1px;
 
-    box-shadow: 0 5% 30% clr.adjust(var.$clr-offBlack-trans, $lightness: -5%);
+    box-shadow: 0 0 10px 5px clr.adjust(var.$clr-green-trans, $lightness: -5%);
     backdrop-filter: blur(8.3px);
 
 }
@@ -94,3 +101,5 @@ hr {
 
 
 }
+
+

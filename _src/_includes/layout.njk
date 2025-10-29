@@ -47,7 +47,11 @@
 
     {%endif%}
 
+    {% include './loadAnim.html' %}
+
     {{content | safe}}
+
+    {%include './footer.html'%}
     
 </body>
 </html>

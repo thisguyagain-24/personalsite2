@@ -1,0 +1,46 @@
+@use "_var.scss" as var;
+
+img.scrollyimg {
+
+    height: 250px;
+
+}
+
+img.scrollyimg {
+
+    padding: 0 40px 0 40px;
+
+}
+
+div.scrollyGuy {
+
+    display: flex;
+    
+    flex-direction: row;
+
+}
+
+div.outerScrollyGuy {
+
+    display: flex;
+
+    flex-direction: row;
+
+    overflow: hidden;
+
+}
+
+.scrollyGuy {
+
+  animation: doscroll 15s infinite linear;
+}
+
+  
+@keyframes doscroll {
+
+    100% {
+
+        transform: translateX(-100%);
+    }
+
+}

@@ -71,9 +71,6 @@ async function fetchContent(thisPage) {
     } */
 }
 
-
-
-
 function mainFormatter(data) {
 
     data.forEach(package => {
@@ -194,4 +191,7 @@ function getExtension(path) {
 
     return basename.slice(pos + 1);            // extract extension ignoring `.`
 }
+
+// ^^ wow all that is a nightmare i wrote over 8 months ago lets not look at that ever again
+
 
