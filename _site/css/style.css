@@ -65,25 +65,29 @@ body h2, body h3, body h4, body h5, body h6 {
 body p, body a {
   font-family: "Titillium Web", monospace;
 }
-body nav a {
+body nav > ul a {
   font-family: "Kdam Thmor Pro", monospace;
 }
 
-* a:hover {
+* {
   transition: 0.2s;
-  color: #ff0077;
 }
 
-nav {
+footer a:hover {
+  color: #ff0077;
+  transition: 0.2s;
+}
+
+nav > ul {
   background-color: hsla(0, 0%, -15%, 0.5519607843);
   box-shadow: 0px 10px 30px hsla(0, 0%, -5%, 0.5019607843);
   backdrop-filter: blur(8.3px);
 }
-nav > * {
+nav > ul li > a {
   transition: 0.2s;
   color: #16DB65;
 }
-nav > a:hover {
+nav > ul li > a:hover {
   transition: 0.2s;
   color: #ff0077;
 }
@@ -128,7 +132,20 @@ hr {
   color: #ff0077;
 }
 
-nav {
+em {
+  color: #ff0077;
+}
+
+p > a {
+  color: #ff0077;
+}
+
+a:hover {
+  transition: 0.2s;
+  color: #ff0077;
+}
+
+nav > ul {
   height: 8vh;
   display: flex;
   align-items: center;
@@ -137,7 +154,7 @@ nav {
   z-index: 2;
   font-size: 1.5em;
 }
-nav > * {
+nav > ul > * {
   padding: 0 2% 0 2%;
 }
 
@@ -213,6 +230,9 @@ hr {
 .qapair .imgTxtGroup img {
   width: 50%;
   margin: 0 0 0 5%;
+}
+.qapair p {
+  padding: 1% 0 1% 0;
 }
 
 .qapair h2 {
@@ -347,7 +367,7 @@ div.outerScrollyGuy {
 }
 footer {
   background-color: black;
-  height: 30vh;
+  height: 20vh;
   padding: 5%;
   margin-top: 5%;
   display: flex;
@@ -376,6 +396,18 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .staticContent, .internalContent {
+    margin: 5%;
+  }
+  .scrollyGuy img {
+    height: 200px;
+  }
+  .qapair .imgTxtGroup {
+    flex-direction: column;
+  }
+  .qapair img {
+    padding: 5% 0 0 0;
+  }
   .internalContent > a, .internalContent > img, .internalContent > h1, .internalContent > h2, .internalContent > h3, .internalContent > h4, .internalContent > h5, .internalContent > h6 {
     width: 100%;
   }
@@ -389,7 +421,7 @@ footer {
     width: 100%;
     max-width: 100%;
   }
-  nav {
+  nav > ul {
     height: 10vw;
     font-size: 1.5rem;
   }
@@ -419,9 +451,13 @@ footer {
   p {
     font-size: 1.3rem;
   }
-  nav {
+  nav > ul {
     height: 10vw;
     font-size: 1.2rem;
+    justify-content: space-around;
+  }
+  .heroDiv .textContainer h2 {
+    font-size: 20px;
   }
   .internalContent div > a {
     font-size: 2rem;

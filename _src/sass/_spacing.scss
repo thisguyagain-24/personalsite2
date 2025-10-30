@@ -1,6 +1,6 @@
 @use "_var.scss" as var;
 
-nav {
+nav > ul {
 
     height: 8vh;
 
@@ -146,6 +146,11 @@ hr {
 
             margin: 0 0 0 5%;
         }
+    }
+
+    p {
+
+        padding: 1% 0 1% 0;
     }
 }
 

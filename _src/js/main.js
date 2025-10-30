@@ -131,11 +131,11 @@ function mainFormatter(data) {
 
         if (thisLink == undefined) {
 
-            toInsertThis.innerHTML = `<div class="internalCard"> <h2> ${thisTitle} </h2> <p> ${thisContent} </p> </div>`
+            toInsertThis.innerHTML = `<div class="internalCard"> <h3> ${thisTitle} </h3> <p> ${thisContent} </p> </div>`
 
         } else {
 
-            toInsertThis.innerHTML = `<div class="internalCard"> <h2> ${thisTitle} </h2> <p> ${thisContent} </p> <a href="${thisLink}"> Link </a> </div>`
+            toInsertThis.innerHTML = `<div class="internalCard"> <h3> ${thisTitle} </h3> <p> ${thisContent} </p> <a href="${thisLink}"> Link </a> </div>`
 
         }
 

@@ -3,6 +3,26 @@
 
 @media screen and (max-width:900px) {
 
+    .staticContent, .internalContent {
+
+        margin:5%;
+    }
+
+    .scrollyGuy img {
+
+        height: 200px;
+    }
+
+    .qapair .imgTxtGroup {
+
+        flex-direction: column;
+    }
+
+    .qapair img {
+
+        padding: 5% 0 0 0;
+    }
+
     .internalContent > a, .internalContent > img, .internalContent > h1, .internalContent > h2, .internalContent > h3, .internalContent > h4, .internalContent > h5, .internalContent > h6 {
 
         width:100%;
@@ -27,7 +47,7 @@
         max-width: 100%;
     }
     
-    nav {
+    nav > ul {
 
         height: 10vw;
 
@@ -84,11 +104,19 @@
         font-size: 1.3rem;
     }
 
-    nav {
+    nav > ul{
 
         height: 10vw;
 
         font-size: 1.2rem;
+
+        justify-content: space-around;
+    }
+
+    .heroDiv .textContainer h2{
+
+        font-size: 20px;
+
     }
 
     .internalContent div > a{
@@ -106,5 +134,7 @@
         margin-bottom: 5%;
 
     }
+
+
     
 }

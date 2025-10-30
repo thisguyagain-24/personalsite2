@@ -3,16 +3,19 @@
 
 * {
 
-    a:hover {
-
-        transition:0.2s;
-
-        color: var.$clr-pink;
-        
-    }
+    transition: 0.2s;
 }
 
-nav {
+
+
+footer a:hover {
+
+    color:var.$clr-pink;
+
+    transition:0.2s;
+}
+
+nav > ul{
 
     background-color:clr.adjust(var.$clr-offBlack-trans, $lightness: -15%, $alpha: 0.05);
 
@@ -21,7 +24,7 @@ nav {
     backdrop-filter: blur(8.3px);
 
 
-    > * {
+    li > a {
 
         transition: 0.2s;
 
@@ -29,7 +32,7 @@ nav {
 
     }
 
-    > a:hover {
+    li > a:hover {
 
         transition:0.2s;
 
@@ -73,8 +76,6 @@ hr {
 
 .internalContent {
 
-    
-
     a {
 
         color: var.$clr-pink;
@@ -117,4 +118,27 @@ hr {
 
 }
 
+    em {
+
+        color:var.$clr-pink;
+    }
+
+    p > a {
+
+        color: var.$clr-pink;
+        
+
+    }
+
+
+    a:hover {
+
+        transition:0.2s;
+
+        color: var.$clr-pink;
+        
+    }
+
+        
+    
 
