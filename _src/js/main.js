@@ -1,7 +1,5 @@
 let contentainter = document.querySelector(".internalContent")
 
-// fetch json from external source here... we'll use a local file for now
-
 let thisPage = document.title;
 
 let contentURL;
