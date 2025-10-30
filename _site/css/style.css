@@ -70,6 +70,11 @@ body nav a {
   font-family: "Kdam Thmor Pro", monospace;
 }
 
+* a:hover {
+  transition: 0.2s;
+  color: #ff0077;
+}
+
 nav {
   background-color: hsla(0, 0%, -15%, 0.5519607843);
   box-shadow: 0px 10px 30px hsla(0, 0%, -5%, 0.5019607843);
@@ -86,8 +91,8 @@ nav > a:hover {
 
 .content {
   background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9607843137), rgba(0, 0, 0, 0.9607843137)), url("/img/noisy.jpg");
-  background-size: contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9803921569), rgba(0, 0, 0, 0.9803921569)), url("/img/noisy.webp");
+  background-size: 200px 200px;
 }
 
 hr {
@@ -97,8 +102,9 @@ hr {
 }
 
 .insertedDiv {
+  background-color: black;
   border: #16DB65 solid 1px;
-  box-shadow: 0 0 10px 5px rgba(19.6721991701, 195.8278008299, 90.3132780083, 0.5019607843);
+  box-shadow: 0 0 10px 5px rgba(17.3443983402, 172.6556016598, 79.6265560166, 0.5019607843);
   backdrop-filter: blur(8.3px);
 }
 
@@ -248,19 +254,20 @@ hr {
   display: block;
   position: absolute;
   z-index: 1000;
+  will-change: transform;
 }
 
 @keyframes slideUpAnim {
   0% {
-    position: absolute;
+    opacity: 100%;
     transform: translateY(0vh);
   }
   98% {
-    visibility: visible;
+    opacity: 100%;
     transform: translateY(-210vh);
   }
   100% {
-    visibility: hidden;
+    opacity: 0%;
     transform: translateY(-300vh);
   }
 }
@@ -279,7 +286,6 @@ hr {
   }
 }
 div.heroDiv {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.84), black), url(https://res.cloudinary.com/dvyvtmbgp/image/upload/v1717088674/3ds.jpg);
   background-size: cover;
   z-index: 1;
   height: 45vh;
@@ -342,7 +348,7 @@ div.outerScrollyGuy {
 }
 footer {
   background-color: black;
-  height: 40vh;
+  height: 30vh;
   padding: 5%;
   margin-top: 5%;
   display: flex;
@@ -355,7 +361,7 @@ footer {
   width: 30%;
 }
 .hardLeft p {
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .hardRight {
@@ -366,7 +372,7 @@ footer {
   margin: 2vh 0 2vh 0;
 }
 .hardRight a {
-  font-size: 32px;
+  font-size: 24px;
   color: #16DB65;
 }
 

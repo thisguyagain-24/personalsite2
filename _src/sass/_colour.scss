@@ -1,6 +1,17 @@
 @use "_var.scss" as var;
 @use "sass:color" as clr;
 
+* {
+
+    a:hover {
+
+        transition:0.2s;
+
+        color: var.$clr-pink;
+        
+    }
+}
+
 nav {
 
     background-color:clr.adjust(var.$clr-offBlack-trans, $lightness: -15%, $alpha: 0.05);
@@ -35,9 +46,9 @@ nav {
 
     background-image:
     linear-gradient((var.$clr-offBlack-demi), var.$clr-offBlack-demi),
-    url("/img/noisy.jpg");
+    url("/img/noisy.webp");
 
-    background-size: contain;
+    background-size: 200px 200px;
 }
 
 hr {
@@ -51,14 +62,18 @@ hr {
 
 .insertedDiv {
 
+    background-color: var.$clr-offBlack;
+
     border: var.$clr-green solid 1px;
 
-    box-shadow: 0 0 10px 5px clr.adjust(var.$clr-green-trans, $lightness: -5%);
+    box-shadow: 0 0 10px 5px clr.adjust(var.$clr-green-trans, $lightness: -10%);
     backdrop-filter: blur(8.3px);
 
 }
 
 .internalContent {
+
+    
 
     a {
 

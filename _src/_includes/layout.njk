@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a Web Developer / Designer. I do freelance work. I don't like bad software. Let's make something good instead.">
     <link rel="icon" href="https://res.cloudinary.com/dvyvtmbgp/image/upload/v1740953937/favicon_gr9dgd.svg" />
+
+    <link rel="canonical" href="https://potentialenergy.xyz/"/>
 
 
     <title> {{title}} </title>
@@ -34,24 +37,27 @@
 
 </head>
 <body class="content">
+    <main role="main">
 
-    <header>
+        <header>
 
-        {% include './nav.html' %}
+            {% include './nav.html' %}
 
-    </header>
+        </header>
 
-    {%if (title != "404")%}
+        {%if (title != "404")%}
 
-        {%include './hero.njk'%}
+            {%include './hero.njk'%}
 
-    {%endif%}
+        {%endif%}
 
-    {% include './loadAnim.html' %}
+        {% include './loadAnim.html' %}
 
-    {{content | safe}}
+        {{content | safe}}
 
-    {%include './footer.html'%}
+        {%include './footer.html'%}
+
+    </main>
     
 </body>
 </html>

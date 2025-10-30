@@ -33,9 +33,6 @@
     animation-fill-mode: forwards;
     animation-delay: 0.1s;
 
-
-
-
 }
 
 .slideUp {
@@ -48,13 +45,15 @@
 
     z-index: 1000;
 
+    will-change: transform;
+
 }
 
 @keyframes slideUpAnim {
 
     0% {
 
-        position: absolute;
+        opacity: 100%;
 
         transform: translateY(0vh);
 
@@ -62,7 +61,7 @@
 
     98% {
 
-        visibility: visible;
+        opacity:100%;
 
         transform:translateY(-210vh)
 
@@ -75,7 +74,7 @@
 
     100% {
 
-        visibility: hidden;
+        opacity: 0%;
 
         transform:translateY(-300vh)
 
